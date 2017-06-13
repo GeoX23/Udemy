@@ -1,6 +1,6 @@
 console.dir(document);
 
-var myOoutput = document.getElementById("output");
+var myOutput = document.getElementById("output");
 
 console.dir(myOutput);
 
