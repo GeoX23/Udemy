@@ -11,6 +11,8 @@ document.getElementById("myButton").addEventListener("click",function(){
 
 document.getElementById("myButton1").addEventListener("click",function(){
    showMyCar();
+   myOutput.innerHTML = "You really need a new car !! ";
+   myOutput.style.color = "red"; 
    
 })
 
