@@ -1,3 +1,8 @@
+console.dir(document);
+
+var myOoutput = document.getElementById("output");
+
+console.dir(myOutput);
 
 document.getElementById("myButton").addEventListener("click",function(){
    myCar();
@@ -22,5 +27,7 @@ function showMyCar(){
     alert("My car's year is : " +myObj1.Year);
     alert("My car's model is : " +myObj1.Model);
     alert("My car cost me  : " +myObj1.Cost);
-}
+} 
+
+
 
