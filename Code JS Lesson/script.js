@@ -31,7 +31,7 @@ myObj1.Cost = prompt("How much did it cost ?");
 }
 
 function showMyCar(){
-    alert("My car's brand is : " +myObj1.Car);
+    alert("My car's brand is: " +myObj1.Car);
     alert("My car's year is : " +myObj1.Year);
     alert("My car's model is : " +myObj1.Model);
     alert("My car cost me  : " +myObj1.Cost);
