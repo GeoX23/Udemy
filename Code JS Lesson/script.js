@@ -1,15 +1,18 @@
 console.dir(document);
 
+// Variables
+
 var myEl = document.querySelectorAll (" li ");
 var myOutput = document.getElementById("output");
 var myBtn = document.getElementById("myBtn");
+var myObj1 = new Object();
+var myEle = document.createElement("h1");
+var myContent = document.createTextNode("New Content");
 
 myBtn.addEventListener("click",ChangeText);
 
-function ChangeText(){
-    myOutput.innerHTML = "You really need a new car !! ";
-    myOutput.style.color = "red"; 
-}
+
+//console Logs
 
 console.log(myEl);
 console.dir(myOutput);
@@ -25,7 +28,14 @@ document.getElementById("myButton1").addEventListener("click",function(){
    
 })
 
-var myObj1 = new Object();
+// loops
+
+for (i=0;i<myEl.length;i++){
+    myEl[i].addEventListener("click",myFun);
+}
+
+// functions
+
 function myCar(){
 myObj1.Car = prompt("What brand is your car ?");
 myObj1.Year = prompt("What year ?");
@@ -40,13 +50,24 @@ function showMyCar(){
     alert("My car cost me  : " +myObj1.Cost);
 } 
 
-for (i=0;i<myEl.length;i++){
-    myEl[i].addEventListener("click",myFun);
+
+function ChangeText(){
+    myOutput.innerHTML = "You really need a new car !! ";
+    myOutput.style.backgroundColor = "black";
+    myOutput.style.color = "red"; 
+    myEle.appendChild(myContent);
+    myOutput.appendChild(myEle);
 }
 
 function myFun(){
     this.style.backgroundColor = "pink";
 }
+
+
+
+
+
+
 
 
 
