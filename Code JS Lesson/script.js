@@ -1,7 +1,9 @@
 console.dir(document);
 
+var myEl = document.querySelectorAll (" li ");
 var myOutput = document.getElementById("output");
 var myBtn = document.getElementById("myBtn");
+
 myBtn.addEventListener("click",ChangeText);
 
 function ChangeText(){
@@ -9,6 +11,7 @@ function ChangeText(){
     myOutput.style.color = "red"; 
 }
 
+console.log(myEl);
 console.dir(myOutput);
 
 document.getElementById("myButton").addEventListener("click",function(){
@@ -36,6 +39,14 @@ function showMyCar(){
     alert("My car's model is : " +myObj1.Model);
     alert("My car cost me  : " +myObj1.Cost);
 } 
+
+for (i=0;i<myEl.length;i++){
+    myEl[i].addEventListener("click",myFun);
+}
+
+function myFun(){
+    this.style.backgroundColor = "pink";
+}
 
 
 
