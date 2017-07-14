@@ -8,6 +8,9 @@ var myBtn = document.getElementById("myBtn");
 var myObj1 = new Object();
 var myEle = document.createElement("h1");
 var myContent = document.createTextNode("New Content");
+var output1 = document.getElementById("output1");
+
+
 
 myBtn.addEventListener("click",ChangeText);
 
@@ -27,6 +30,22 @@ document.getElementById("myButton1").addEventListener("click",function(){
    
    
 })
+
+document.getElementById("updatebtn").onclick = function() {
+    var myVal = document.getElementById("update").value;
+    if (myVal == "red"){
+        myVal = "Wow red is my fav color :D ";
+    }
+    else  if (myVal == "blue"){
+        myVal = "Wow its blue";
+    }
+    else (
+        myVal = "Not red or blue ... such a pitty :( "
+    )
+    
+    output1.innerHTML = myVal;
+}
+
 
 // loops
 
