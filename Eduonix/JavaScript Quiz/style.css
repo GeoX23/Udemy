@@ -1,0 +1,18 @@
+#container {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    padding: 30px 60px 30px 60px;
+    margin: 5% 10% 5% 10%;
+}
+
+h1 {
+    background-color: Orange;
+    color: black;
+    padding: 30px;
+}
+
+body {
+    background-color : orange;
+}
+
