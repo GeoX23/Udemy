@@ -65,10 +65,8 @@ function myCar() {
 }
 
 function showMyCar() {
-    alert("My car's brand is: " + myObj1.Car);
-    alert("My car's year is : " + myObj1.Year);
-    alert("My car's model is : " + myObj1.Model);
-    alert("My car cost me  : " + myObj1.Cost);
+    alert("My car's brand is: " + myObj1.Car + " | Year : " +myObj1.Year + " | Model : " +myObj1.Model + " | Cost : " +myObj1.Cost);
+    
 }
 
 

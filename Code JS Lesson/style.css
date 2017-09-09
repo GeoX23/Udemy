@@ -6,3 +6,14 @@
 #jsonblock {
     padding : 15px;
 }
+
+body {
+    padding:25px;
+    background-color: black;
+}
+
+.container {
+    background-color: orange;
+    color: black;
+    padding: 25px;
+}
